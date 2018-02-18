@@ -1,0 +1,27 @@
+REPLとは、Read-eval-print loop の略で、「読み込み-処理-表示」の繰り返しという意味になります。対話型のRuby実行環境のことです。
+
+#railsサーバー起動
+$ rails s -b $IP -p $PORT
+
+#環境変数確認
+$ rails c
+> p ENV
+
+$ env
+
+#gemfile インストール書き方
+#単品
+gem 'ライブラリ名', 'バージョン指定'
+
+#複数　グループ
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platform: :mri
+end
+
+#REPLとは
+Read-eval-print loop の略で、「読み込み-処理-表示」
+
+#リクエストからレスポンスまでの流れ
+リクエストRouter（選択）→Controller（参照）→Model（テーブル参照）
+→データベース（レコード取得）→Model（取得）→Controller（表示）→View→レスポンス
