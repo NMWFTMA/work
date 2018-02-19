@@ -25,3 +25,14 @@ Read-eval-print loop の略で、「読み込み-処理-表示」
 #リクエストからレスポンスまでの流れ
 リクエストRouter（選択）→Controller（参照）→Model（テーブル参照）
 →データベース（レコード取得）→Model（取得）→Controller（表示）→View→レスポンス
+
+#コントローラー作成
+$ rails g controller コントローラ名
+　※コントローラー名はモデルの複数形
+
+#indexからshowへのリンクを追加する。 
+link_to 表示文字列,リンク先 
+※ Model のインスタンス（レコード）を渡すと、
+自動的にそのインスタンスの show アクションへとリンクされるようになります。
+例　link_to messge.id, message
+
