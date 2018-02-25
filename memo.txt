@@ -36,3 +36,6 @@ link_to 表示文字列,リンク先
 自動的にそのインスタンスの show アクションへとリンクされるようになります。
 例　link_to messge.id, message
 
+ActiveRecord は、Rails という大きく統合されたライブラリ群の中の1つで、Model 全般の操作を担うライブラリです。
+
+method: :delete
