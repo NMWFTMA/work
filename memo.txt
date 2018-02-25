@@ -38,4 +38,8 @@ link_to 表示文字列,リンク先
 
 ActiveRecord は、Rails という大きく統合されたライブラリ群の中の1つで、Model 全般の操作を担うライブラリです。
 
-method: :delete
+#show.html.erbにおけるdeleteへのリンクの記載
+<%= link_to 'このメッセージを削除する',@message,method: :delete, data: { confirm:'本当に削除してもよろしいですか？'} %>
+
+#新規マイグレーションファイルの生成（カラム追加）
+rails g migration Addカラム名Toテーブル名 カラム名:カラムのデータ型
